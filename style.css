@@ -246,6 +246,11 @@ h2 {
     gap: 12px
 }
 
+.link {
+    text-decoration: underline;
+}
+
+
 /* >= 768px */
 @media (min-width: 768px) {
     .nav {
