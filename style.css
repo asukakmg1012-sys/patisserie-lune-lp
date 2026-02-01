@@ -250,6 +250,121 @@ h2 {
     text-decoration: underline;
 }
 
+/* layout helpers */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.cta {
+    padding: 56px 0;
+}
+
+.cta-eyebrow {
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    opacity: 0.8;
+    margin: 0 0 8px;
+}
+
+.cta-title {
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    line-height: 1.2;
+    margin: 0 0 12px;
+}
+
+.cta-lead {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0 0 20px;
+    opacity: 0.9;
+}
+
+.cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0 0 16px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    min-height: 44px;
+    /* mobile tap target */
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    color: #fff;
+    background: #1f2a44;
+}
+
+.btn-primary:hover {
+    filter: brightness(1.05);
+}
+
+.btn-ghost {
+    background: transparent;
+    border-color: #cfd6e4;
+    color: #1f2a44;
+}
+
+.btn-ghost:hover {
+    background: rgba(31, 42, 68, 0.06);
+}
+
+.cta-notes {
+    margin: 0 0 12px;
+    padding-left: 18px;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+.cta-next {
+    display: inline-block;
+    margin-top: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.cta-next:hover {
+    text-decoration: underline;
+}
+
+/* Anchor jump offset for fixed header */
+:root {
+    --header-h: 72px;
+    /* ヘッダーの実高さに合わせて調整 */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* idジャンプ時に見出しがヘッダーに隠れないようにする */
+section[id] {
+    scroll-margin-top: calc(var(--header-h) + 16px);
+}
+
+
+@media (max-width: 480px) {
+    .cta {
+        padding: 40px 0;
+    }
+
+    .cta-actions .btn {
+        width: 100%;
+    }
+}
+
+
 
 /* >= 768px */
 @media (min-width: 768px) {
