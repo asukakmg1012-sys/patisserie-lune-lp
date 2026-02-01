@@ -1,0 +1,267 @@
+:root {
+    --bg: #ffffff;
+    --text: #111;
+    --muted: #666;
+    --line: #e9e9e9;
+    --alt: #f7f7f7;
+    --radius: 14px;
+    --max: 980px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: var(--radius)
+}
+
+.container {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 16px
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid var(--line);
+    backdrop-filter: blur(8px);
+    z-index: 10;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 0;
+}
+
+.brand {
+    font-weight: 700;
+    letter-spacing: 0.2px
+}
+
+.nav {
+    display: none;
+    gap: 14px;
+    margin-left: auto
+}
+
+.nav a {
+    color: var(--muted)
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #111;
+    color: #fff;
+    border-color: #111
+}
+
+.btn-ghost {
+    background: transparent
+}
+
+.hero {
+    padding: 28px 0 20px
+}
+
+.hero-inner {
+    display: grid;
+    gap: 18px
+}
+
+.hero h1 {
+    font-size: clamp(28px, 3.5vw, 44px);
+    line-height: 1.15;
+    margin: 0
+}
+
+.hero p {
+    margin: 10px 0 0;
+    color: var(--muted)
+}
+
+.hero-cta {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 14px
+}
+
+.meta-list {
+    margin: 16px 0 0;
+    padding-left: 18px;
+    color: var(--muted)
+}
+
+.hero-media {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 8px
+}
+
+.section {
+    padding: 40px 0
+}
+
+.section.alt {
+    background: var(--alt);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line)
+}
+
+h2 {
+    font-size: 22px;
+    margin: 0 0 14px
+}
+
+.lead {
+    color: var(--muted);
+    margin: 0 0 18px
+}
+
+.card-grid {
+    display: grid;
+    gap: 12px
+}
+
+.card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 14px;
+    background: #fff;
+}
+
+.card h3 {
+    margin: 0 0 6px;
+    font-size: 16px
+}
+
+.card p {
+    margin: 0;
+    color: var(--muted)
+}
+
+.steps {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 10px
+}
+
+.steps li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start
+}
+
+.steps span {
+    width: 26px;
+    height: 26px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--line);
+    background: #fff;
+    font-weight: 700;
+}
+
+.note {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 14px;
+    background: #fff;
+    margin: 16px 0;
+}
+
+.two-col {
+    display: grid;
+    gap: 12px
+}
+
+.map {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: #fff;
+    padding: 14px
+}
+
+.map-placeholder {
+    color: var(--muted)
+}
+
+.cta-box {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px
+}
+
+.muted {
+    color: var(--muted)
+}
+
+.small {
+    font-size: 12px
+}
+
+.site-footer {
+    border-top: 1px solid var(--line);
+    padding: 18px 0
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px
+}
+
+/* >= 768px */
+@media (min-width: 768px) {
+    .nav {
+        display: flex
+    }
+
+    .hero-inner {
+        grid-template-columns: 1.1fr 0.9fr;
+        align-items: center
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .two-col {
+        grid-template-columns: 1fr 1fr
+    }
+}

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pâtisserie Lune｜木曜販売とホールケーキ予約</title>
+  <meta name="description" content="木曜限定の店頭販売と、ホールケーキの事前予約。受取・予約条件などはこちら。" />
+
+  <!-- OGP (仮) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pâtisserie Lune｜木曜販売とホールケーキ予約" />
+  <meta property="og:description" content="木曜限定の店頭販売と、ホールケーキの事前予約。" />
+  <meta property="og:image" content="./assets/ogp.png" />
+  <meta property="og:locale" content="ja_JP" />
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Pâtisserie Lune</div>
+      <nav class="nav">
+        <a href="#thu">木曜販売</a>
+        <a href="#order">予約</a>
+        <a href="#access">アクセス</a>
+      </nav>
+      <a class="btn btn-primary" href="#contact">予約相談</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- FV -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>木曜だけの、やさしい甘さ。</h1>
+          <p>焼き菓子の店頭販売と、ホールケーキの事前予約を承ります。</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contact">ホールケーキ予約を相談する</a>
+            <a class="btn btn-ghost" href="#thu">木曜販売を見る</a>
+          </div>
+          <ul class="meta-list">
+            <li>木曜 10:30–15:30</li>
+            <li>とよのていねい（仮）</li>
+            <li>店頭受取のみ（配送なし）</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <img src="./assets/hero.jpg" alt="焼き菓子の写真（仮）" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 木曜販売 -->
+    <section id="thu" class="section">
+      <div class="container">
+        <h2>木曜販売のご案内</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>日時</h3>
+            <p>毎週木曜 10:30–15:30</p>
+          </div>
+          <div class="card">
+            <h3>場所</h3>
+            <p>とよのていねい（仮）<br>住所：〇〇（仮）</p>
+          </div>
+          <div class="card">
+            <h3>内容</h3>
+            <p>焼き菓子／ケーキ（売り切れ次第終了）<br>イートイン5席（仮）</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 予約 -->
+    <section id="order" class="section alt">
+      <div class="container">
+        <h2>ホールケーキのご予約</h2>
+        <p class="lead">まずはご希望を伺い、内容を確認のうえ確定します（外部フォーム/DM誘導）。</p>
+
+        <ol class="steps">
+          <li><span>1</span> フォーム（またはDM）で相談</li>
+          <li><span>2</span> 内容確認（受取日・サイズ・ご予算など）</li>
+          <li><span>3</span> ご予約確定 → 店頭でお受取</li>
+        </ol>
+
+        <div class="note">
+          <p><strong>予約条件（仮）</strong><br>
+            受取日：木曜中心（事前調整で別日可）／締切：◯日前まで／価格：¥◯◯〜
+          </p>
+        </div>
+
+        <a class="btn btn-primary" href="#contact">予約について相談する</a>
+      </div>
+    </section>
+
+    <!-- アクセス -->
+    <section id="access" class="section">
+      <div class="container">
+        <h2>アクセス</h2>
+        <div class="two-col">
+          <div>
+            <p><strong>場所</strong><br>とよのていねい（仮）</p>
+            <p><strong>住所</strong><br>〇〇（仮）</p>
+            <p><strong>お支払い</strong><br>現金／◯◯（仮）</p>
+            <p class="muted">※駐車場・目印などは確定次第追記します。</p>
+          </div>
+          <div class="map">
+            <div class="map-placeholder">GoogleマップURL（仮）</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>お問い合わせ・ご予約相談</h2>
+        <p class="lead">下記ボタンから外部フォーム（またはInstagram DM）へ進みます。</p>
+
+        <!-- ここを後で外部フォームURLに差し替える -->
+        <div class="cta-box">
+          <a class="btn btn-primary" href="https://example.com" target="_blank" rel="noopener">外部フォームで相談する（仮）</a>
+          <a class="btn btn-ghost" href="https://instagram.com" target="_blank" rel="noopener">Instagramを見る（仮）</a>
+        </div>
+
+        <p class="muted small">※価格や内容は変更になる場合があります。詳細はお問い合わせください。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand">Pâtisserie Lune</div>
+      <div class="muted small">© <span id="y">2026</span> Pâtisserie Lune</div>
+    </div>
+  </footer>
+</body>
+</html>
